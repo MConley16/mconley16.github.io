@@ -1,0 +1,30 @@
+h1
+{
+    font-size: 60px;
+    font-family: 'Shippori Antique B1', sans-serif;
+    color:#999788;
+    text-shadow: 3px 3px 1px black;
+}
+  
+p
+{
+    font-size: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+body
+{
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 50px 50px 50px;
+    width: 800px;
+    border: 15px solid #403b35;
+    background-color: white;
+}
+
+html
+{
+    background-color: #596a48;
+}
