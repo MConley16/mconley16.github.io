@@ -1,8 +1,135 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        <p>Hello World</p>
-    </body>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="My name is Melissa Conley and I'm a developer living in San Diego. Browse my professional portfolio of web development and software engineering works.">
+        <meta name="author" content="Melissa Conley">
+		<link href="styles/styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="images/melissa-logo.svg" type="image/x-icon">
+        <title>Melissa Conley - Portfolio</title>
+	</head>
+
+	<body>
+        <!--   Cover   -->
+        <div class="cover">
+            <div class="logo-section">
+                <a href="https://www.linkedin.com/in/melissa-conley/"><img src="images/linkedin-gray.svg" alt="LinkedIn logo" class="logo"></a>
+                <a href="https://github.com/MConley16"><img src="images/github-gray.svg" alt="Github logo" class="logo"></a>
+            </div>
+            <h1>MELISSA CONLEY</h1>
+            <p>Browse my professional portfolio of web development and software engineering works.</p>
+        </div>
+
+        <div class="content">
+            <h2 id="works">Works</h2>
+
+             <!--   Dragon Slayers Depot   -->
+            <div class="flexbox">
+                <div class="flex-text">
+                    <h3>Wordpress Website <span>Dragon Slayers' Depot</span></h3>
+                    <a class="button" href="https://dragonslayersdepot.website">Visit Website</a>
+                    <br><br>
+                    <p>Dragon Slayers' Depot is a mock ecommerce site made with the WordPress CMS. This mock business sells fantasy adventuring gear such as enchanted swords, potions, and magical staffs.</p>
+                </div>
+
+                <img class="flex-img" srcset="images/dragon-slayers-depot-300w.webp 300w, images/dragon-slayers-depot.webp 525w"
+                    sizes="(max-width: 600px) 300px, 525px" src="images/dragon-slayers-depot.webp"
+                     alt="Home page of Dragon Slayers' Depot">
+            </div>
+
+            <div class="flexbox">
+                <div class="flex-text">
+                    <ul>
+                        <li>Responsive display - adapts to mobile, tablet, and desktop screens</li>
+                        <li>Implements the WooCommerce ecommerce plugin to create dynamic product pages and cart/checkout functionality</li>
+                        <li>Static pages created using the Elementor visual builder</li>
+                        <li>Uses pre-made theme</li>
+                        <li>Uses WebP image format for greater page loading speed</li>
+                        <li>Includes a subscription capability for receiving newsletters</li>
+                        <li>Secured with HTTPS</li>
+                    </ul>
+                 </div>
+
+                 <img class="flex-img" srcset="images/dragon-slayers-depot-store-300w.webp 300w, images/dragon-slayers-depot-store.webp 525w" sizes="(max-width: 600px) 300px, 525px"
+                      src="images/dragon-slayers-depot-store.webp" alt="Store page of Dragon Slayers' Depot">
+            </div>
+
+            <span class="line"></span>
+
+            <!--   Fire Spread   -->
+            <div class="flexbox gray">
+                <img class="flex-img" srcset="images/fire-rate-diagram-300w.webp 300w, images/fire-rate-diagram.webp 525w" sizes="(max-width: 600px) 300px, 525px" src="images/fire-rate-diagram.webp"
+                     alt="Effect of slope on rate of spread in each cardinal direction">
+
+                <div class="flex-text">
+                    <h3>Wildfire Spread <span>Simulation</span></h3>
+                    <a class="button" href="https://github.com/MConley16/FireSpreadSimulation">Visit Github Page</a>
+                    <br><br>
+                    <p>The Wildfire simulation is a program that calculates fire spread behavior based on varying environmental factors and outputs the result in the form of animation or statistics.
+                         Made as a personal project.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flexbox gray">
+                <img class="flex-img" srcset="images/burn-diagram-300w.webp 300w, images/burn-diagram.webp 525w" sizes="(max-width: 600px) 300px, 525px" src="images/burn-diagram.webp"
+                     alt="Diagram of shape of spreading fire">
+
+                <div class="flex-text">
+                    <ul>
+                        <li>Independently developed a continuous agent-based model for simulating wildfires</li>
+                        <li>Collected spread rate, area, and reaction intensity statistics</li>
+                        <li>Calculations based on changes in wind, slope, temperature, fuel type, and moisture level</li>
+                        <li>Animation used to study the shape and speed at which land agents/units transfered between the initial, burning, and burnt states</li>
+                        <li>Implemented with Object Oriented Design in MATLAB</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--   Vector Art   -->
+            <div class="flexbox">
+                <div class="flex-text-art">
+                    <h3>Vector Logo <span>Art</span></h3>
+                    <p>This art style uses lines and curves based on mathematical formulas that can be scaled to any size without losing image quality.</p>
+                    <ul>
+                        <li>Perfect style for logos and icons</li>
+                        <li>Created using photo-editing software such as Inkscape</li>
+                    </ul>
+                </div>
+                <img class="flex-img-art" srcset="images/plant-400w.svg 400w, images/plant.svg 550w" sizes="(max-width: 600px) 400px, 550px" src="images/plant.svg" alt="Potted spider plant">
+            </div>
+
+            <div class="art-section">
+                <img class="art-row" src="images/australian-cattle-dog.svg" alt="Australian Cattle Dog">
+                <img class="art-row" src="images/dessert.svg" alt="Matcha dessert cup">
+                <img class="art-row" src="images/shiba-pitbull.svg" alt="Shiba Inu - Pitbull mix dog">
+            </div>
+
+            <!--   About Me     -->
+            <div id="about-section" class="gray">
+                <h2 id="about-title">About Me</h2>
+
+                <div class="flexbox">
+                    <div class="flex-text">
+                        <p>I'm Melissa Conley - I'm a developer living in San Diego County and working for the machine-learning startup CrowdAI.<br><br>I graduated from San Diego State University in 2020 and have worked 
+                        for General Atomics writing software and documentation for unmanned aerial vehicles. At General Atomics I gained valuable experience leading a group of software 
+                        engineers and documenting complex designs.<br><br>Now, through self-teaching, I've gained skills pertinent to developing on the web - from creating sites from scratch, 
+                        using content management systems to create sites, and implementing the fundamentals of SEO. I hope to use a combination of my experience and newly acquired skills to be
+                        a crucial part of a team.</p>
+                    </div>
+                    <img class="flex-img" srcset="images/melissa-conley-350w.webp 350w, images/melissa-conley-500w.webp 500w" sizes="(max-width: 600px) 350px, 500px" src="images/melissa-conley-500w.webp"
+                         alt="Photo of Melissa Conley">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <a href="https://www.linkedin.com/in/melissa-conley/"><img src="images/linkedin.svg" alt="LinkedIn logo" class="logo"></a>
+            <a href="https://github.com/MConley16"><img src="images/github.svg" alt="Github logo" class="logo"></a>
+		</footer>
+	</body> 
 </html>
