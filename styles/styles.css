@@ -1,0 +1,527 @@
+@font-face
+{
+    font-family: "Flight";
+    src: url("../fonts/AnotherFlight-m752.ttf");
+}
+
+/* Cover ------------------------------------------------ */
+
+h1
+{
+    margin-top: 1vw;
+    font-size: 7.2vw;
+}
+
+h1, div.cover p
+{
+    font-family: "Flight", sans-serif;
+    color: #02577a;
+}
+
+h1, div.cover p, div.cover .logo
+{
+    margin-left: 2.5vw;
+}
+
+div.cover .logo
+{
+    margin-top: 12vw;
+    width: 4vw;
+}
+
+div.cover p
+{
+    margin-top: -4.5vw;
+    font-size: 2.7vw;
+    color: #7694a2ff;
+    line-height: 3.5vw;
+    width: 30vw;
+}
+
+body
+{
+    background-image: url(../images/cover.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive - Cover ------------------------------------------------ */
+
+@media (max-width: 1400px)
+{
+    body
+    {
+        background-image: url(../images/cover-2300w.webp);
+        height: 85vw;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    h1 
+    {
+        font-size: 85px;
+    }
+
+    div.cover p
+    {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    div.cover .logo
+    {
+        width: 40px;
+    } 
+}
+
+@media (max-width: 800px)
+{
+    body
+    {
+        background-image: url(../images/cover-1000w.webp);
+        background-size: cover;
+        height: 100vw;
+    }
+
+    div.cover p
+    {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 600px)
+{
+    h1
+    {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    div.cover p
+    {
+        text-align: center;
+        width: 100vw;
+        margin-left: 0vw;
+    }
+
+    .logo-section
+    {
+        text-align: center;
+        margin-top: 50vw;
+    }
+
+    body
+    {
+        background-image: url(../images/mobile-cover.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Content ------------------------------------------------ */
+.content
+{
+    margin-top: 25vw;
+}
+
+.gray
+{
+    background-color: #f2f7f9;
+}
+
+.flex-text, .flex-img
+{
+    display: block;
+    margin: 0 auto;
+}
+
+h2
+{
+    font-size: 4.5vw;
+    margin-left: 2.5vw;
+    text-align: center;
+}
+
+h2, span
+{
+    color: #02577a;
+}
+
+h2, h3
+{
+    font-family: "Flight", sans-serif;
+}
+
+h2::before, h2::after
+{
+    content: '';
+    display: inline-block;
+    background: #89d6fb;
+    width: 10vw;
+    height: .5vw;
+    margin: 1.5vw 1vw;
+}
+
+h3
+{
+    font-size: 2vw;
+    color: #7694a2ff;
+    margin-bottom: 3vw;
+}
+
+span
+{
+    font-size: 3vw;
+}
+
+p, li
+{
+    line-height: 2vw;
+}
+
+p, li, .button
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+}
+
+li
+{
+    list-style-type: circle;
+    margin-left: -1vw;
+}
+
+.button
+{
+    color: white;
+    background-color: #02a9f7;
+    border-radius: 1vw;
+    text-decoration: none;
+    padding: 1vw 1vw;
+}
+
+img
+{
+    border-radius: 1.5vw;
+}
+
+/* Responsive - Content ------------------------------------------------ */
+
+@media (max-width: 1200px) and (min-width: 600px)
+{
+    p, li, .button
+    {
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+
+    h3 
+    {
+        font-size: 2.8vw;
+    }
+
+    span 
+    {
+        font-size: 3.8vw;
+    }
+
+    .flexbox
+    {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .flex-text
+    {
+        max-width: 40%;
+    }
+
+    .flex-img
+    {
+        max-width: 45%;
+        max-height: 35vw;
+    }
+
+    .flex-text, .flex-img
+    {
+        flex: 50%;
+        margin: 3vw 3vw;
+    }
+}
+
+@media (max-width: 900px)
+{
+    p, li, .button
+    {
+        font-size: 2.5vw;
+        line-height: 3.7vw;
+    }
+
+    h3 
+    {
+        font-size: 3.3vw;
+    }
+
+    span 
+    {
+        font-size: 4.3vw;
+    }
+}
+
+@media (max-width: 800px)
+{
+    #works
+    {
+        margin-top: 45vw;
+    }
+}
+
+@media (max-width: 600px)
+{
+    p, li, .button
+    {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    h2
+    {
+        font-size: 40px;
+    }
+
+    h2, #works
+    {
+        margin-top: 0vw;
+    }
+
+    h3 
+    {
+        font-size: 20px;
+    }
+
+    h3, .button
+    {
+        text-align: center;
+    }
+
+    span 
+    {
+        font-size: 30px;
+    }
+
+    .button
+    {
+        border-radius: 2.5vw;
+        padding: 1vw 2.5vw;
+        display: block;
+        margin: 0 33vw;
+    }
+
+    p
+    {
+        margin: 0vw 4vw 0vw 4vw;
+    }
+
+    p, ul 
+    {
+        padding-bottom: 4vw;
+    }
+
+    li 
+    {
+        margin: 3vw 4vw 3vw -1vw;
+    }
+
+    .content
+    {
+        margin-top: 15vw;
+    }
+
+    .flex-img
+    {
+        padding: 5vw 0 5vw 0;
+    }
+}
+
+@media (min-width: 1201px)
+{
+    .flexbox
+    {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .flex-text
+    {
+        flex: 55%;
+        max-width: 42%;
+    }
+
+    .flex-img
+    {
+        flex: 45%;
+        max-width: 32%;
+    }
+
+    .flex-text, .flex-img
+    {
+        margin: 3vw 6vw;
+    }
+}
+
+/* Vector Art ------------------------------------------------ */
+
+.art-section
+{
+    text-align: center;
+}
+
+.art-row
+{
+    margin: 0 1.5vw;
+    width: 20vw;
+}
+
+.flex-text-art
+{
+    margin: 3vw 4vw 3vw 8vw;
+}
+
+.flex-img-art
+{
+    margin: 3vw 8vw 3vw 4vw;
+}
+
+.flex-text-art, .flex-img-art
+{
+    flex: 1;
+}
+
+/* Responsive - Vector Art ------------------------------------------------ */
+
+@media (max-width: 1200px)
+{
+    .art-row
+    {
+        width: 20vw;
+    }
+
+    .flex-img-art
+    {
+        max-width: 50vw;
+        height: 50vw;
+        margin: 0 0;
+    }
+
+    .flex-text-art
+    {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .flex-text-art
+    {
+        margin-bottom: 3vw;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .art-row
+    {
+        width: 50vw;
+    }
+
+    .flex-img-art
+    {
+        max-width: 100vw;
+        height: 60vw;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .flex-text-art
+    {
+        margin: 0 0;
+    }
+}
+
+/* About Me ------------------------------------------------ */
+
+
+#about-title
+{
+    padding-top: 5vw;
+}
+
+#about-section
+{
+    padding-bottom: 4vw;
+}
+
+#about-section img
+{
+    max-width: 22vw;
+    margin-left: 10vw;
+}
+
+#about-section p
+{
+    margin-top: 0;
+}
+
+/* Responsive - About Me ------------------------------------------------ */
+
+@media (max-width: 1200px)
+{
+    #about-section img 
+    {
+        max-height: 43vw;
+        max-width: 30vw;
+    }
+}
+
+@media (max-width: 600px)
+{
+    #about-section img 
+    {
+        min-width: 250px;
+        margin: 0 auto;
+        min-height: 345px;
+    }
+}
+
+/* Footer ------------------------------------------------ */
+footer .logo
+{
+    width: 3vw;
+    margin: 0 1vw;
+}
+
+footer
+{
+    background-color: #89d6fb;
+    padding: 3vw 0;
+    text-align: center;
+}
+
+/* Responsive - Footer ------------------------------------------------ */
+
+@media (max-width: 1000px)
+{
+    footer .logo
+    {
+        width: 30px;
+    }
+}
