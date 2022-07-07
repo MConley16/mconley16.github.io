@@ -4,6 +4,12 @@
     src: url("../fonts/AnotherFlight-m752.ttf");
 }
 
+@font-face
+{
+    font-family: "Roboto";
+    src: url("../fonts/RobotoLight-aW3R.ttf")
+}
+
 /* Cover ------------------------------------------------ */
 
 h1
@@ -190,7 +196,7 @@ p, li
 
 p, li, .button
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.2vw;
 }
 
